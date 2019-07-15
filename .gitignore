@@ -89,6 +89,5 @@ local.properties
 .scala_dependencies
 .worksheet
 
-src/main/resources/
 src/test/
 target/generated-sources/
