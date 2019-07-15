@@ -1,8 +1,8 @@
 package io.github.effectivedev.designpattern.mediator;
 
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
-@Slf4j
+@Log4j2
 public class ConcreteMediator implements IMediator{
     ColleagueA talk;
     ColleagueB fight;

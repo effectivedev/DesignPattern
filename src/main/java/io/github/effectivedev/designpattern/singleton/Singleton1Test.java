@@ -1,13 +1,13 @@
 package io.github.effectivedev.designpattern.singleton;
 
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-@Slf4j
+@Log4j2
 public class Singleton1Test {
 
     @Before
