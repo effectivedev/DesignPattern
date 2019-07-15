@@ -1,17 +1,20 @@
 package io.github.effectivedev.designpattern.mediator;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class ConcreteMediator implements IMediator{
     ColleagueA talk;
     ColleagueB fight;
 
     @Override
     public void fight() {
-        System.out.println("Mediator is fighting");
+        log.info("Mediator is fighting");
     }
 
     @Override
     public void talk() {
-        System.out.println("Mediator is talking");
+        log.info("Mediator is talking");
     }
 
     @Override
