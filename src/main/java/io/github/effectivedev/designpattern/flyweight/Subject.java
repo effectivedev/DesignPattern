@@ -8,5 +8,6 @@ public class Subject {
 
     public Subject(String name) {
         this.name = name;
+        log.info("create: {}", name);
     }
 }
