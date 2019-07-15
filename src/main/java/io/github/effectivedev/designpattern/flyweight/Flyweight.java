@@ -3,6 +3,9 @@ package io.github.effectivedev.designpattern.flyweight;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The goal of the flyweight pattern is to reduce memory usage by sharing as much data as possible
+ */
 public class Flyweight {
     Map<String, Object> map = new HashMap<>();
 
