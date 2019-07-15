@@ -1,5 +1,8 @@
 package io.github.effectivedev.designpattern.observer;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Person implements Observer {
 	private String name;
 	private int age;
@@ -12,7 +15,7 @@ public class Person implements Observer {
 	}
 	@Override
 	public void update(String title, String msg) {
-		System.out.println(this+": title: "+ title+ ", msg: " +  msg);
+		log.info(this+": title: "+ title+ ", msg: " +  msg);
 	}
 	@Override
 	public void subscribe(Publisher publisher) {
