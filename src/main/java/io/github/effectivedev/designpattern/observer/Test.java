@@ -7,7 +7,7 @@ public class Test {
 	}
 
 	private static void testObserver() {
-		Publisher cafe = new NaverCafe();
+		Publisher cafe = new InternetCafe();
 		Observer person = new Person("Park", 1);
 		Observer person2 = new Person("Lee", 3);
 
