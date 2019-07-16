@@ -11,8 +11,6 @@ public class RobotTest {
         robot.move();
         robot.attack();
 
-        Robot trobot = new Robot();
-
     }
 
 }
