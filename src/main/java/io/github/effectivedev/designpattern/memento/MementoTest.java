@@ -5,22 +5,20 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class OriginatorTest {
+public class MementoTest {
 
     public static void main(String[] args) {
-
-        List<Originator.Memento> savedStatus = new ArrayList<>();
-
+        CareTaker careTaker = new CareTaker();
         Originator originator = new Originator();
         originator.setState("State1");
         originator.setState("State2");
-        savedStatus.add(originator.saveToMemento());
+        careTaker.add(originator.saveToMemento());
         originator.setState("State3");
 
-        savedStatus.add(originator.saveToMemento());
+        careTaker.add(originator.saveToMemento());
         originator.setState("State4");
 
-        originator.restoreFromMemento(savedStatus.get(0));
+        originator.restoreFromMemento(careTaker.get(0));
 
     }
 
